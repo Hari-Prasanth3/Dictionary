@@ -125,10 +125,9 @@ const Search = () => {
           
             </FormControl>
             <div/>
-             <div className="flex flex-cols-4 mt-10 justify-center items-center md:flex-row shadow rounded-xl bg-violet-200  m-2 pl-20" >
+             <div className="flex flex-cols-4 mt-10 justify-center items-center md:flex-row shadow rounded-xl bg-violet-200  m-2">
               <div className="mb-auto mt-10 p-5">
-                {<h2>Word </h2>}
-                <ul>{results[0]?.word}</ul>
+                {<h2>Word: {results[0]?.word}</h2>}
               </div>
 
               <div className="mb-auto mt-10 p-5">
@@ -136,7 +135,7 @@ const Search = () => {
                   {results && (
                   
                     
-                      <p>Pronunciation
+                      <p>Pronunciation:
                         {results[0]?.phonetics.map((x) => {
                           return <li> {x.text}</li>;
                         })}
@@ -158,9 +157,9 @@ const Search = () => {
               
               </div>
 
-              <div className="mb-auto mt-10 p-5 pl-5">
+              <div className="mb-auto mt-10 p-5 pl-15">
                 
-                  {results && <h2>Definitions</h2>}
+                  {results && <h2>Definitions:</h2>}
                
 
            
